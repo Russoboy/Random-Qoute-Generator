@@ -20,7 +20,7 @@ copyText.addEventListener('click', () => {
 
 
 function getQuote() {
-  const apiKey = 'tXDIUEhy1/cUebjInb2nTw==atMRIMgz8ytZjlji';  // Replace with your valid API key if needed
+  const apiKey = '';  // Replace with your valid API key if needed
   const apiUrl = 'https://api.api-ninjas.com/v1/quotes';
   
   // Fetch from the API with proper headers
