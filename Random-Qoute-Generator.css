@@ -1,52 +1,46 @@
-/* styles.css */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  #quote-container {
-    margin: 20px 0;
-  }
-  
-  #quote {
-    font-size: 1.5em;
-    color: #555;
-  }
-  
-  #author {
-    font-size: 1.2em;
-    color: #777;
-    font-style: italic;
-  }
-  
-  #generate-btn {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #generate-btn:hover {
-    background-color: #0056b3;
-  }
+
+body{
+  margin: 12rem 12rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.container{
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 5%;
+  grid-template-columns: repeat();
+}
+
+#title{
+   font-size: 1.5rem;
+  text-decoration: none;
+  color: #333;
+}
+
+#Quote{
+  font-size: 1rem;
+  color: #555;
+}
+
+#Author{
+  font-size: 0.5rem;
+  font-style: italic;
+  color: #777;
+}
+
+#Generate{
+  border: 1px solid black; 
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(81, 81, 224);
+} 
+
+#copyText{
+  border: 1px solid black; 
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(167, 81, 224);
+}
+#Generate:hover{
+   background-color: rgb(167, 88, 167);
+}
