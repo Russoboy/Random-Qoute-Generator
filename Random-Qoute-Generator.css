@@ -1,46 +1,88 @@
 
 body{
-  margin: 12rem 12rem;
-  font-family: 'Arial', sans-serif;
+    margin: 12rem 12rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container{
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 5%;
+   
+  }
+  
+  #title{
+     font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #Quote{
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  #Author{
+    font-size: 0.5rem;
+    font-style: italic;
+    color: #777;
+  }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.container{
-  border: 1px solid black;
-  padding: 0.5rem 1rem;
-  border-radius: 5%;
-  grid-template-columns: repeat();
+/* Fade-out animation */
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 
-#title{
-   font-size: 1.5rem;
-  text-decoration: none;
-  color: #333;
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
 }
 
-#Quote{
-  font-size: 1rem;
-  color: #555;
+.fade-out {
+  animation: fadeOut 1s ease-in-out;
 }
 
-#Author{
-  font-size: 0.5rem;
-  font-style: italic;
-  color: #777;
-}
-
-#Generate{
-  border: 1px solid black; 
-  padding: 0.5rem;
-  color: white;
-  background-color: rgb(81, 81, 224);
-} 
-
-#copyText{
-  border: 1px solid black; 
-  padding: 0.5rem;
-  color: white;
-  background-color: rgb(167, 81, 224);
-}
-#Generate:hover{
-   background-color: rgb(167, 88, 167);
-}
+  #Generate{
+    border: 1px solid black; 
+    padding: 0.5rem;
+    color: white;
+    background-color: rgb(81, 81, 224);
+  } 
+  
+  #copyText{
+    border: 1px solid black; 
+    padding: 0.5rem;
+    color: white;
+    background-color: rgb(167, 81, 224);
+  }
+  #Generate:hover{
+     background-color: rgb(167, 88, 167);
+  }
+  .spinner {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #ccc;
+    border-top-color: #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  .darkModeBtnToggle{
+    background-color: black;
+    color: white;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  #fontSelectorContainer{
+    margin-left: 40rem;
+  }
