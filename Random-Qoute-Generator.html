@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Random-Quote-Generator.css" >
+    <link rel="stylesheet" href="RQG-Advance.css" >
 </head>
 <body>
   <div class="container">
@@ -13,10 +13,27 @@
     <p id="Quote"></p>
     <p id="Author"></p>
     <p id="Category"></p>
+    <div id="loading-spinner" class="spinner"></div>
+    <div id="favourite-quote"></div>
+    
+<div id="fontSelectorContainer" >
+    <label for="fontSelector">Choose Font:</label>
+   <select id="fontSelector">
+   <option value="Arial">Arial</option>
+   <option value="Courier New">Courier New</option>
+   <option value="Georgia">Georgia</option>
+   <option value="Times New Roman">Times New Roman</option>
+   <option value="Verdana">Verdana</option>
+   </select>
+</div>
   </div>
+    <button id="refresh-Btn" style="border: 1px solid black;padding: 0.5rem;color: white; background-color: rgb(247, 6, 6);" >Refresh</button>
     <button id="copyText">Copy</button>
     <button id="Generate">Generate Quote</button>    
+    <button id="tweetBtn" >Tweet</button>
+    <button id="darkmode" style="border: 1px solid black;padding: 0.5rem;color: white; background-color: rgb(0, 0, 0);">DarkMode</button>
+    <button id="saveBtn" style="border: 1px solid black;padding: 0.5rem;color: white; background-color: rgb(247, 191, 6);">Save</button>
   </div>
 </body>
-<script src="Random-Quote-Generator.js"></script>
+<script src="RQG-Advance.js"></script>
 </html>
